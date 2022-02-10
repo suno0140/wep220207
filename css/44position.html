@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .sub {
+            display: none;
+            position: absolute;
+            top : -5px;
+            left : 118px;
+            background-color: black;
+            color: white;
+        }
+        ul {
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+        }
+        .sub > li {
+            width: 120px;
+            padding: 3px;
+            margin: 0px;
+        }
+        .main > li {
+            width: 120px;
+            position: relative;
+            padding: 3px;
+            margin: 0px;
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+        .main > li:hover {
+            border-right: 5px solid yellow;
+        }
+        .main > li:hover > .sub {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul.main>li*5>lorem1+ul.sub>li*3>lorem1 -->
+    <ul class="main">
+        <li>
+            Lorem.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>In.</li>
+                <li>Earum!</li>
+            </ul>
+        </li>
+        <li>
+            Officia.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Quidem.</li>
+                <li>Tempore.</li>
+            </ul>
+        </li>
+        <li>
+            Quos.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Iste?</li>
+                <li>Vel.</li>
+            </ul>
+        </li>
+        <li>
+            Eaque.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Omnis!</li>
+                <li>Ipsa?</li>
+            </ul>
+        </li>
+        <li>
+            Repudiandae!
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Labore!</li>
+                <li>Voluptas.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

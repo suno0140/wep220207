@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,21 +9,22 @@
     </style>
 </head>
 <body>
-    <!-- .container>.row>.col -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>hello my web page, suno</h1>
-                
-                <p>bootstrap grid 연습 <a href="https://suno0140.github.io/wep220207/css/67bootstrap-grid.html">
-                    <i class="fa-solid fa-link"></i>
-                </a></p>
-            </div>
-        </div>
+    
+
+    <!-- button.btn.btn-primary(보여주기) -->
+    <button class="btn btn-primary">보여주기</button>
+
+    <!-- #result -->
+    <div id="result">
+
     </div>
 
-    
-    
+    <script>
+        document.querySelector("button").onclick=function(){
+            document.querySelector("#result").innerHTML = "새 글 출력";
+        }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

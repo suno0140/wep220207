@@ -10,16 +10,16 @@
 </head>
 <body>
     <script>
-        let afun = function(a){
+        let afunc = function(a){
             console.log(a);
         }
 
-        afun(1);
-        afun("hello")
-        afun(function(){
+        afunc(1);
+        afunc("hello")
+        afunc(function(){
             console.log("hi");
         });
-        afun(afun)
+        afunc(afunc);
         //
         let bfunc = function(b){
             b();

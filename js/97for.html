@@ -43,8 +43,8 @@
         for(let i = 0; i < notes.length; i++){
             console.log(notes[i].innerHTML);
         }
-        for (let note of notes){
-            console.log(note.innerHTML);
+        for (let h of notes){
+            console.log(h.innerHTML);
         }
 
         let paras = document.querySelectorAll("p");
@@ -60,7 +60,7 @@
         let h1s = document.getElementsByTagName("h1");
         for(let i = 0; i < h1s.length; i++){
             h1s[i].onclick = function(){
-                console.log(h1s[i].innerHTML);
+                console.log(this.innerHTML);
             }
         }
 

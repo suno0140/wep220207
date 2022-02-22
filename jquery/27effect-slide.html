@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#input1").keyup(function() {
+                
+                let text = this.value.toLowerCase();
+                for (let item of $("#ul1 > li")) {
+
+                    // text() : jquery method, 요소의 text content 리턴
+                    // includes() : string method, 파라미터로 받은 string을 포함하고 있으면 true, 그렇지 않으면 false
+                    if ($(item).text().toLowerCase().includes(text)) {
+                        $(item).slideDown("fast");
+                    } else {
+                        $(item).slideUp("fast");
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <!-- input#input1+ul#ul1>li*50>lorem5 -->
+    <input type="text" id="input1">
+    <ul id="ul1">
+        <li>
+            Lorem ipsum dolor sit amet.
+        </li>
+        <li>
+            Voluptatum laborum maiores nostrum itaque!
+        </li>
+        <li>
+            Ut perspiciatis quas vitae non?
+        </li>
+        <li>
+            Blanditiis enim molestias aut inventore?
+        </li>
+        <li>
+            Consequuntur illo rem incidunt nam!
+        </li>
+        <li>
+            Culpa tempora distinctio nisi quae.
+        </li>
+        <li>
+            Dolores quis atque sed asperiores?
+        </li>
+        <li>
+            Mollitia non voluptate autem libero.
+        </li>
+        <li>
+            Pariatur doloremque enim quaerat aliquam?
+        </li>
+        <li>
+            Facilis eos delectus reprehenderit eius!
+        </li>
+        <li>
+            Et laboriosam ratione vero minima.
+        </li>
+        <li>
+            Animi, aliquid. Labore, quae atque?
+        </li>
+        <li>
+            Quasi corrupti maxime sint possimus.
+        </li>
+        <li>
+            Accusamus repellat illo aliquam modi.
+        </li>
+        <li>
+            Laudantium atque non a aliquid.
+        </li>
+        <li>
+            Nostrum, inventore totam! Tenetur, quidem.
+        </li>
+        <li>
+            Ab quibusdam quam unde assumenda.
+        </li>
+        <li>
+            Sed repellendus perferendis libero ipsam.
+        </li>
+        <li>
+            Quaerat debitis accusantium et doloremque.
+        </li>
+        <li>
+            Quidem eligendi perspiciatis iure quas?
+        </li>
+        <li>
+            Quis laudantium corporis recusandae excepturi?
+        </li>
+        <li>
+            Magni labore provident dolorem voluptates.
+        </li>
+        <li>
+            Ab rerum earum itaque corrupti?
+        </li>
+        <li>
+            Sit dolore omnis sequi illum.
+        </li>
+        <li>
+            Odit omnis molestias aliquam iure.
+        </li>
+        <li>
+            Ut deleniti odit doloremque exercitationem.
+        </li>
+        <li>
+            Maxime sunt aspernatur aperiam voluptas.
+        </li>
+        <li>
+            Ipsam culpa porro numquam harum!
+        </li>
+        <li>
+            Deleniti porro a soluta in.
+        </li>
+        <li>
+            Nisi quia dolor repudiandae sit.
+        </li>
+        <li>
+            Consequuntur, dolor quam. Nemo, sequi!
+        </li>
+        <li>
+            Inventore est eos sit commodi.
+        </li>
+        <li>
+            Consequatur molestiae dolor itaque impedit.
+        </li>
+        <li>
+            Enim atque culpa ut debitis!
+        </li>
+        <li>
+            Repellat ipsa ipsam amet nisi?
+        </li>
+        <li>
+            Aliquam impedit rerum obcaecati id?
+        </li>
+        <li>
+            Quasi eaque minima officiis aperiam.
+        </li>
+        <li>
+            Iure aperiam natus tenetur deleniti.
+        </li>
+        <li>
+            Minima fugiat consequuntur molestias dolor.
+        </li>
+        <li>
+            Quo numquam facilis laudantium. Consequatur?
+        </li>
+        <li>
+            Ratione veritatis nam ea culpa!
+        </li>
+        <li>
+            Provident exercitationem nesciunt nisi! Nihil.
+        </li>
+        <li>
+            Quidem voluptatem fugiat error quae?
+        </li>
+        <li>
+            Recusandae iusto dolorem error aliquid.
+        </li>
+        <li>
+            Explicabo fugit qui porro nulla?
+        </li>
+        <li>
+            Velit blanditiis quidem odit laudantium?
+        </li>
+        <li>
+            Cum repellendus necessitatibus asperiores veniam!
+        </li>
+        <li>
+            Architecto nihil sapiente dolor eligendi?
+        </li>
+        <li>
+            Repellat molestias illo cum. Reprehenderit!
+        </li>
+        <li>
+            Inventore quae commodi architecto odit?
+        </li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
